@@ -20,12 +20,14 @@ public class BrokenLinkTest {
     @Parameters("browser")
     public void setDriver(@Optional("chrome") String browser){
         this.driver = DriverFactory.getDriver(browser);
+        //initializing the browser
     }
 
     // https://the-internet.herokuapp.com/broken_images
 
     @Test
     public void linkTest(){
+    	//launching the google website
         this.driver.get("https://www.google.com");
 
         System.out.println("Before :: " + LocalDateTime.now());
