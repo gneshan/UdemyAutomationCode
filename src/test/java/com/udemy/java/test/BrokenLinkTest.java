@@ -28,7 +28,7 @@ public class BrokenLinkTest {
     @Test
     public void linkTest(){
     	//launching the google website
-        //updating the comment here to pull into the ecllipse IDE
+        //updating the comment here to pull into the eclipse IDE
         this.driver.get("https://www.google.com");
 
         System.out.println("Before :: " + LocalDateTime.now());
